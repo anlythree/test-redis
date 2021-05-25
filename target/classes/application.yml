@@ -1,0 +1,20 @@
+server:
+  port: 8001
+spring:
+  application:
+    name: test-redis
+    #redis 配置
+  redis:
+    host: 103.72.146.31
+    port: 6379
+    password: 123hate123
+    timeout: 3600000ms
+    lettuce:
+      pool:
+        max-active: 8
+        max-wait: -1ms
+        max-idle: 8
+        min-idle: 0
+    database: 0
+logging:
+  config: classpath:logback.xml
