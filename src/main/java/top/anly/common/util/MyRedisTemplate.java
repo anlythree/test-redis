@@ -30,6 +30,7 @@ public class MyRedisTemplate {
         } catch (Exception e) {
             e.printStackTrace();
         }
+
         return result;
     }
 
